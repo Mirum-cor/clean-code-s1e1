@@ -6,23 +6,23 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.the-eisenhower-matrix-description-block {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.the-eisenhower-matrix-description-block img {
   width: 100%;
 }
 
-.aaa .more-inf {
+.the-eisenhower-matrix-description-block .more-info-about-the-eisenhower-matrix {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .aaa {
+  .the-eisenhower-matrix-description-block {
     text-align: center;
   }
 }
@@ -39,7 +39,7 @@ body {
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.new-task-row-wrapper {
   display: flex;
 }
 
