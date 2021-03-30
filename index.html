@@ -14,7 +14,7 @@
     >
   </head>
   <body id="body">
-    <div class="eisenhower-matrix">
+    <header class="eisenhower-matrix">
       <img
           src="./eisenhower-matrix.jpg"
           class="eisenhower-matrix-img"
@@ -26,18 +26,18 @@
       >
         Want more details?
       </a>
-    </div>
-    <div class="main-content">
-      <p id="new-tasks">
+    </header>
+    <main class="main-content">
+      <article id="new-tasks">
         <label for="new-task" class="new-task-heading">Add Item</label>
-        <div class="new-task-wrapper">
+        <section class="new-task-wrapper">
           <input id="new-task" class="task task-input" type="text">
           <button class="add">Add</button>
-        </div>
-      </p>
+        </section>
+      </article>
       <h3 class="tasks-heading">Todo</h3>
-      <ul id="incomplete-tasks">
-        <li class="task-item">
+      <article id="incomplete-tasks">
+        <section class="task-item">
           <input type="checkbox" class="mark-done">
           <label class="task task-name">Pay Bills</label>
           <input type="text" class="task task-input">
@@ -45,8 +45,8 @@
           <button class="delete">
             <img src="./remove.svg" class="delete-img" alt="Delete task">
           </button>
-        </li>
-        <li class="edit-mode task-item">
+        </section>
+        <section class="edit-mode task-item">
           <input type="checkbox" class="mark-done">
           <label class="task task-name">Go Shopping</label>
           <input type="text" value="Go Shopping" class="task task-input">
@@ -54,11 +54,11 @@
           <button class="delete">
             <img src="./remove.svg" class="delete-img" alt="Delete task">
           </button>
-        </li>
-      </ul>
+        </section>
+      </article>
       <h3 class="tasks-heading">Completed</h3>
-      <ul id="completed-tasks">
-        <li class="task-item">
+      <article id="completed-tasks">
+        <section class="task-item">
           <input type="checkbox" class="mark-done" checked>
           <label class="task task-name">See the Doctor</label>
           <input type="text" class="task task-input">
@@ -66,9 +66,9 @@
           <button class="delete">
             <img src="./remove.svg" class="delete-img" alt="Delete task">
           </button>
-        </li>
-      </ul>
-    </div>
+        </section>
+      </article>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
