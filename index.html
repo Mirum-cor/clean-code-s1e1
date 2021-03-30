@@ -13,8 +13,8 @@
         charset="utf-8"
     >
   </head>
-  <body id="body">
-    <header class="eisenhower-matrix">
+  <body class="body">
+    <header class="header">
       <img
           src="./eisenhower-matrix.jpg"
           class="eisenhower-matrix-img"
@@ -28,43 +28,43 @@
       </a>
     </header>
     <main class="main-content">
-      <article id="new-tasks">
-        <label for="new-task" class="new-task-heading">Add Item</label>
-        <section class="new-task-wrapper">
-          <input id="new-task" class="task task-input" type="text">
-          <button class="add">Add</button>
+      <article class="add-new-tasks">
+        <label class="tasks-heading tasks-heading_new-task">Add Item</label>
+        <section class="task-item">
+          <input class="task-item__task task-item__task_input task-item__task_create-new" type="text">
+          <button class="task-item__modify-task task-item__modify-task_add">Add</button>
         </section>
       </article>
       <h3 class="tasks-heading">Todo</h3>
-      <article id="incomplete-tasks">
+      <article class="incomplete-tasks">
         <section class="task-item">
-          <input type="checkbox" class="mark-done">
-          <label class="task task-name">Pay Bills</label>
-          <input type="text" class="task task-input">
-          <button class="edit">Edit</button>
-          <button class="delete">
-            <img src="./remove.svg" class="delete-img" alt="Delete task">
+          <input type="checkbox" class="task-item__mark-done">
+          <label class="task-item__task task-item__task_label">Pay Bills</label>
+          <input type="text" class="task-item__task task-item__task_input">
+          <button class="task-item__modify-task task-item__modify-task_edit">Edit</button>
+          <button class="task-item__modify-task task-item__modify-task_delete">
+            <img src="./remove.svg" class="task-item__delete-img" alt="Delete task">
           </button>
         </section>
-        <section class="edit-mode task-item">
-          <input type="checkbox" class="mark-done">
-          <label class="task task-name">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task task-input">
-          <button class="edit">Save</button>
-          <button class="delete">
-            <img src="./remove.svg" class="delete-img" alt="Delete task">
+        <section class="task-item task-item_edit-mode">
+          <input type="checkbox" class="task-item__mark-done">
+          <label class="task-item__task task-item__task_label task-item__task_edit-label">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="task-item__task task-item__task_input task-item__task_edit-input">
+          <button class="task-item__modify-task task-item__modify-task_edit">Save</button>
+          <button class="task-item__modify-task task-item__modify-task_delete">
+            <img src="./remove.svg" class="task-item__delete-img" alt="Delete task">
           </button>
         </section>
       </article>
       <h3 class="tasks-heading">Completed</h3>
-      <article id="completed-tasks">
+      <article class="completed-tasks">
         <section class="task-item">
-          <input type="checkbox" class="mark-done" checked>
-          <label class="task task-name">See the Doctor</label>
-          <input type="text" class="task task-input">
-          <button class="edit">Edit</button>
-          <button class="delete">
-            <img src="./remove.svg" class="delete-img" alt="Delete task">
+          <input type="checkbox" class="task-item__mark-done" checked>
+          <label class="task-item__task task-item__task_label task-item__task_label-completed">See the Doctor</label>
+          <input type="text" class="task-item__task task-item__task_input">
+          <button class="task-item__modify-task task-item__modify-task_edit">Edit</button>
+          <button class="task-item__modify-task task-item__modify-task_delete">
+            <img src="./remove.svg" class="task-item__delete-img" alt="Delete task">
           </button>
         </section>
       </article>
